@@ -16,8 +16,8 @@ public class CollegeController {
 	@Autowired
 	CollegeService cs;
 	@PostMapping(value="/add")
-	public String adddetail(@RequestBody CollegeStuEnity cm) {
-		return cs.adddetail(cm);
+	public String adddetail(@RequestBody CollegeStuEnity cmm) {
+		return cs.adddetail(cmm);
 	}
 	@PutMapping(value="update")
 	public String updateinfo(@RequestBody CollegeStuEnity cc) {
